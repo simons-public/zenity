@@ -46,7 +46,7 @@ class ZenityBase():
     def result(self):
         """ Get the stdout response from zenity """
         return self.read()
-    
+
     def read(self):
         """ Get the stdout response from zenity """
         line = self.process.stdout.readline().decode('UTF-8').strip()
